@@ -3,7 +3,7 @@ ENV LAST_BUILD=2020-02-27
 RUN mkdir -p /data/
 WORKDIR /data/
 
-ARG URL_DOWNLOAD=http://download.geofabrik.de/south-america/brazil/sul-latest.osm.pbf
+ARG URL_DOWNLOAD=http://download.geofabrik.de/south-america/brazil-latest.osm.pbf
 RUN wget -O latest.osm.pbf ${URL_DOWNLOAD}
 
 FROM osrm/osrm-backend:latest as builder
